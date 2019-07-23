@@ -1,9 +1,10 @@
 import React from "react";
+import { Container } from "../Grid";
 
-// This file exports the Input, TextArea, and FormBtn components
 
 const SearchForm = props => {
   return (
+      <Container>
       <form>
           <div className="form-group">
               <label className=""><h3>Search For Book</h3></label>
@@ -16,10 +17,11 @@ const SearchForm = props => {
                   onChange={props.handleInputChange}
               />
           </div>
-          <button type="submit" className="btn" onClick={props.handleFormSubmit}>
+          <button type="submit" className="btn btn-info text-white" onClick={props.handleFormSubmit}>
               Submit
           </button>
       </form>
+      </Container>
   )
 }
 

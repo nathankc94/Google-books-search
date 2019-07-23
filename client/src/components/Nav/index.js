@@ -4,18 +4,24 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
-        Google Book Search
+        <h2 className="text-white">Google Book Search</h2>
       </a>
+
       <div>
-        <ul>
+        <ul className="navbar-nav">
           <li id="home">
-            <a href="/">
-              <button type="button">Search Books</button>
+            <a className="nav-link" href="/">
+              <button className="btn btn-info text-white" type="button">
+                Search Books
+              </button>
             </a>
           </li>
+
           <li id="savedBooks">
-            <a href="/">
-              <button type="button">Saved Books</button>
+            <a className="nav-link" href="/saved">
+              <button className="btn btn-info text-white" type="button">
+                Saved Books
+              </button>
             </a>
           </li>
         </ul>
