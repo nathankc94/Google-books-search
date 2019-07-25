@@ -1,9 +1,9 @@
 import axios from "axios"
-
+const goole_URL = "https://www.googleapis.com/books/v1/volumes?q=";
 export default {
     // Get book from google search 
-    getGoogleSearchBooks: function(query) {
-        return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query)
+    googleApi: function(q) {
+        return axios.get(goole_URL + q)
     },
 
     // Gets all books

@@ -19,7 +19,7 @@ function Nav() {
 
           <li id="savedBooks">
             <a className="nav-link" href="/saved">
-              <button className="btn btn-info text-white" type="button">
+              <button className="btn btn-success" type="button">
                 Saved Books
               </button>
             </a>

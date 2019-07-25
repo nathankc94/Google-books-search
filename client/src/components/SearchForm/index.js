@@ -7,13 +7,13 @@ const SearchForm = props => {
       <Container>
       <form>
           <div className="form-group">
-              <label className=""><h3>Search For Book</h3></label>
+            <h1>Search For Book</h1>
               <br></br>
               <input className="col-12 form-control"
                   value={props.search}
                   type="text"
                   name="searchBook"
-                  placeholder="Enter Book's Name"
+                  placeholder="Search for books"
                   onChange={props.handleInputChange}
               />
           </div>
